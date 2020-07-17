@@ -1,0 +1,154 @@
+:root {
+  --document-background: #171717;
+  --section-background: #212121;
+  --title-color: #ffcf40;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--document-background);
+  line-height: 1.6rem;
+  color: var(--text-color);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--title-color);
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+.container-padding {
+  padding: 1.5% 5%;
+}
+
+/* Navbar */
+.navbar {
+  text-align: left;
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--title-color);
+}
+
+/* Middle section */
+#main-section {
+  background-color: var(--section-background);
+}
+
+.main-heading {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.secondary-heading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.title-img {
+  padding: 4rem 0;
+}
+
+.main-text {
+  text-align: left;
+}
+
+.main-text .row {
+  margin: 0;
+}
+
+.main-text p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.social-icon {
+  margin: 0 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+#social {
+  font-size: 0.8rem;
+  color: #414141;
+  font-weight: 300;
+}
+
+#social p {
+  margin: 0;
+}
+
+/* Forms */
+.form-row {
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 0 15%;
+}
+
+.form-col {
+  margin: 1rem 0;
+}
+
+/* play.html */
+
+.game-text-container {
+  transform: translateY(160%);
+}
+
+#game-text {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+#game-subtext {
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+#game-screen {
+  position: relative;
+  background-color: var(--document-background);
+  height: 600px;
+  width: 800px;
+  border: 1px solid var(--text-color);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#game-screen > div {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid var(--title-color);
+  border-radius: 100%;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* about.html */
+.loading-box {
+  margin-top: 2rem;
+}
+
+.loading-box strong {
+  margin-right: 1rem;
+}
+
+#loading-button {
+  margin: 2rem;
+}
