@@ -129,7 +129,7 @@ a:hover {
   margin-bottom: 4rem;
 }
 
-#game-screen > div {
+.bubble {
   position: absolute;
   height: 2rem;
   width: 2rem;
