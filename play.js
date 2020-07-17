@@ -56,6 +56,7 @@ async function playGame(difficultySetting) {
   bubbleNumber = Math.floor(Math.random() * 41 + 10);
   for (let i = 0; i < bubbleNumber; i++) {
     let bubble = document.createElement('div');
+    bubble.classList.add('bubble');
     generatePosition(bubble);
     generateColor(bubble);
     gameScreen.appendChild(bubble);
